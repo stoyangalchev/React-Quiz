@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Quiz App
 
-Currently, two official plugins are available:
+## Overview
+A simple and interactive quiz application built using React, Vite, and Styled Components. This project leverages React Query for data fetching and caching.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Fast and responsive UI with React and Vite
+- Styled Components for dynamic styling
+- React Query for efficient state management and API requests
+- TypeScript for type safety and better development experience
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Clone the repository
+```sh
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Install dependencies
+```sh
+npm install
 ```
+
+## Scripts
+
+### Start Development Server
+```sh
+npm run dev
+```
+Runs the app in development mode. Open `http://localhost:5173/` to view it in the browser.
+
+### Build the Application
+```sh
+npm run build
+```
+Builds the app for production.
+
+### Run Linter
+```sh
+npm run lint
+```
+Runs ESLint to check code for potential issues.
+
+### Preview Production Build
+```sh
+npm run preview
+```
+Runs the built app in preview mode.
+
+## Technologies Used
+- **React** (^18.3.1) - UI library
+- **Vite** (^5.3.1) - Fast build tool
+- **Styled Components** (^6.1.11) - CSS-in-JS library
+- **React Query** (^5.50.1) - Data fetching and caching
+- **TypeScript** (^5.2.2) - Strongly typed JavaScript
+- **ESLint** (^8.57.0) - Linting tool
+
+## License
+This project is open-source and available under the MIT License.
+
+---
+
+Made with ❤️ by Stoyan Galchev
+
