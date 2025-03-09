@@ -11,7 +11,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://stoyangalchev.github.io/React-Quiz/",
+ "homepage": "https://stoyangalchev.github.io/React-Quiz/",
+
   "dependencies": {
     "@tanstack/react-query": "^5.50.1",
     "react": "^18.3.1",
